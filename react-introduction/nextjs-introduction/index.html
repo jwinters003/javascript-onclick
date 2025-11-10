@@ -9,30 +9,28 @@
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-  <!-- Babel so we can write JSX in the browser -->
+  <!-- Babel (for JSX in browser) -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Tailwind (CDN) -->
+  <!-- TailwindCSS (CDN for styling) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Components (order doesn’t matter as long as App.js is before render below) -->
+  <!-- Components (load order matters) -->
   <script src="./Button.js" type="text/babel"></script>
   <script src="./Card.js" type="text/babel"></script>
   <script src="./Header.js" type="text/babel"></script>
   <script src="./Footer.js" type="text/babel"></script>
+  <script src="./Flex.js" type="text/babel"></script>
   <script src="./Main.js" type="text/babel"></script>
   <script src="./Navbar.js" type="text/babel"></script>
   <script src="./Content.js" type="text/babel"></script>
-  <!-- Extra credit (optional) -->
-  <!-- <script src="./Pill.js" type="text/babel"></script> -->
-
   <script src="./App.js" type="text/babel"></script>
 </head>
+
 <body class="bg-white text-gray-900 antialiased">
-  <!-- The ONLY HTML element we keep—React renders everything inside here -->
   <div id="root"></div>
 
-  <!-- Bootstrap React rendering -->
+  <!-- Render our React App -->
   <script type="text/babel">
     const container = document.getElementById("root");
     const root = ReactDOM.createRoot(container);
